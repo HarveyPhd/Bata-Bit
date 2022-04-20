@@ -100,3 +100,56 @@ header img {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+/* Main container */
+
+main {
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  background-color: var(--off-white);
+}
+
+.main-exchange-container {
+  width: 100%;
+  height: auto;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.main-exchange-container .backgroundImg {
+  background-image: url(./assets/img/bitcoin.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 40px;
+}
+
+.main-exchange-container__title {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.main-exchange-container__title h2 {
+  margin-bottom: 24px;
+  font-family: var(--primary-font);
+  font-size: 2.4rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.main-exchange-container__title p {
+  margin-bottom: 48px;
+  font-family: var(--primary-font);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #757575;
+}
