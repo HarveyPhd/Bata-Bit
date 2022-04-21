@@ -437,3 +437,30 @@ p.feature__description {
   line-height: 1.8rem;
   color: #808080;
 }
+
+/* Principal Image */
+
+.image-container {
+  width: 100%;
+  height: auto;
+}
+
+h2.image-container__title {
+  position: relative;
+  top: 64px;
+  width: 90%;
+  min-width: 288px;
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+}
+
+img.womanImg {
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
