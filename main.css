@@ -468,3 +468,124 @@ img.womanImg {
   width: auto;
   height: auto;
 }
+
+/* Plans */
+
+.main-plans-container .plans-container {
+  width: 90%;
+  min-width: 288px;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 64px 0;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+
+.main-plans-container .plan-description__title {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  color: var(--warm-black);
+  margin-bottom: 24px;
+}
+
+.main-plans-container .plan-description__subtitle {
+font-weight: 500;
+font-size: 1.4rem;
+line-height: 1.8rem;
+color: #757575;
+}
+
+.main-plans-container .plan-cost-container {
+  position: relative;
+  width: 190px;
+  margin: 0 auto;
+  padding: 31px 0 24px;
+  margin-top: 49px;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border-radius: 8px;
+}
+
+.main-plans-container .text-recomendation {
+  position: absolute;
+  top: -15px;
+  left: calc(50% - 50px);
+  display: inline-block;
+  width: 100px;
+  padding: 8px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  border-radius: 8px;
+  background-color: var(--bitcoin-orange);
+  color: var(--just-white);
+}
+
+.main-plans-container .type-plan {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+.plan-cost-container .plan-cost {
+  position: relative;
+  display: inline-block;
+}
+
+.plan-cost .plan-cost__currency {
+  position: absolute;
+  left: -12px;
+  top: 10px;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #363636;
+}
+
+.plan-cost .plan-cost__number {
+  width: 65px;
+  height: 56px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 5.2rem;
+  line-height: 6.3rem;
+  letter-spacing: -0.08em;
+}
+
+.plan-cost-container .plan-saveMoney {
+  width: 158px;
+  margin: 16px auto;
+  font-family: var(--secondary-blue);
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #757575;
+}
+
+.plan-cost-container .plan-choose {
+  display: inline-block;
+  padding: 11px 0;
+  width: 150px;
+  height: 48px;
+  vertical-align: middle;
+  border: 2px solid var(--bitcoin-orange);
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  background-color: var(--off-white);
+  color: var(--warm-black);
+}
+
+.plan-choose .right-arrow {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  background-image: url(./assets/icons/arrow-right.svg);
+  vertical-align: middle;
+}
