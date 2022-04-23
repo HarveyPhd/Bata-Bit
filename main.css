@@ -21,6 +21,7 @@
 html {
   font-size: 62.5%;
   font-family: 'DM Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -348,9 +349,23 @@ main {
   border-radius: 0 0 8px 0;
 }
 
+/* Features */
+
 .main-features-container {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
   background-color: var(--warm-black);
   padding-top: 64px;
+}
+
+.main-features-container .batata-icon {
+  position: absolute;
+  left: calc(50% - 20px);
+  top: -12px;
+  width: 40px;
+  height: 24px;
+  background-image: url('./assets/icons/logo-batata.svg');
 }
 
 .features-title-container {
@@ -379,11 +394,11 @@ p.feature__subtitle {
   line-height: 1.8rem;
   color: #808080;
 }
-
+ /* Inicio de cards */
 .features-contain-container {
   width: 90%;
   min-width: 288px;
-  max-width: 500px;
+  max-width: 400px;
   height: auto;
   margin: 0 auto;
   padding-bottom: 30px;
@@ -395,6 +410,7 @@ p.feature__subtitle {
   margin-bottom: 16px;
   width: 100%;
   padding: 14px 20px 22px 16px;
+  border-radius: 4px;
   color: var(--just-white);
   background-color: #282623;
 }
@@ -438,6 +454,8 @@ p.feature__description {
   color: #808080;
 }
 
+/* Fin de cards */
+
 /* Principal Image */
 
 .image-container {
@@ -472,13 +490,18 @@ img.womanImg {
 /* Plans */
 
 .main-plans-container .plans-container {
-  width: 90%;
+  width: 100%;
   min-width: 288px;
   max-width: 320px;
   margin: 0 auto;
   padding: 64px 0;
   text-align: center;
   font-family: var(--primary-font);
+}
+
+.plans-container .plan-description-container {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .main-plans-container .plan-description__title {
@@ -496,10 +519,32 @@ line-height: 1.8rem;
 color: #757575;
 }
 
-.main-plans-container .plan-cost-container {
+.plans-container-slider {
+  display: flex;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
+/* Importante */
+
+.plans-container-slider::-webkit-scrollbar {
+  background-color: transparent;
+  height: 3px;
+}
+.plans-container-slider::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Importante */
+
+.plan-cost-container {
   position: relative;
-  width: 190px;
-  margin: 0 auto;
+  scroll-snap-align: center;
+  min-width: 190px;
+  height: 247px;
+  margin: 0 8px;
   padding: 31px 0 24px;
   margin-top: 49px;
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
@@ -522,6 +567,15 @@ color: #757575;
   color: var(--just-white);
 }
 
+.basic-plan-container .text-recomendation {
+  background-color: var(--secondary-blue);
+}
+
+.unlimited-plan-container .text-recomendation {
+  background-color: var(--grey);
+  color: var(--black);
+}
+
 .main-plans-container .type-plan {
   margin-bottom: 8px;
   font-weight: 500;
@@ -536,7 +590,7 @@ color: #757575;
 
 .plan-cost .plan-cost__currency {
   position: absolute;
-  left: -12px;
+  left: -10px;
   top: 10px;
   font-family: var(--secondary-font);
   font-weight: 500;
@@ -546,7 +600,6 @@ color: #757575;
 }
 
 .plan-cost .plan-cost__number {
-  width: 65px;
   height: 56px;
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -558,7 +611,7 @@ color: #757575;
 .plan-cost-container .plan-saveMoney {
   width: 158px;
   margin: 16px auto;
-  font-family: var(--secondary-blue);
+  font-family: var(--secondary-font);
   font-weight: 500;
   font-size: 1.2rem;
   line-height: 1.5rem;
@@ -577,7 +630,7 @@ color: #757575;
   font-weight: 700;
   font-size: 1.4rem;
   line-height: 1.8rem;
-  background-color: var(--off-white);
+  background-color: var(--soft-orange);
   color: var(--warm-black);
 }
 
@@ -588,4 +641,14 @@ color: #757575;
   margin-left: 8px;
   background-image: url(./assets/icons/arrow-right.svg);
   vertical-align: middle;
+}
+
+.plan-cost-container.unlimited-plan-container {
+  background-color: var(--black);
+  color: var(--just-white);
+  margin-right: 65px;
+}
+
+.plan-cost-container.basic-plan-container {
+  margin-left: 65px;
 }

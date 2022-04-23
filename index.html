@@ -21,7 +21,7 @@
       <p>
         Batatabit te ayuda a navegar entre los diferentes precios y tendecias.
       </p>
-      <a href="" class="header__button">
+      <a href="#plans" class="header__button">
         Conoce Nuestros Planes
         <span></span>
       </a>
@@ -106,6 +106,8 @@
       </section>
     </section>
     <section class="main-features-container">
+      <span class="batata-icon">
+      </span>
       <div class="features-title-container">
         <h2 class="feature__title">
           Creamos un producto sin comparación.
@@ -114,40 +116,40 @@
           Confiable y diseñado para su uso diario.
         </p>
       </div>
-      <div class="features-contain-container">
-        <div class="feature__contain">
+      <section class="features-contain-container">
+        <article class="feature__contain">
           <span class="featureImg icon__clock"></span>
           <h3 class="feature__title">Tiempo real</h3>
           <p class="feature__description">Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
-        </div>
-        <div class="feature__contain">
+        </article>
+        <article class="feature__contain">
           <span class="featureImg icon__eye"></span>
           <h3 class="feature__title">No hay tasas escondidas</h3>
           <p class="feature__description">Ni en la compra o al momento exit, Batabit siempre te muestra el costo real de lo que está adquiriendo.</p>
-        </div>
-        <div class="feature__contain">
+        </article>
+        <article class="feature__contain">
           <span class="featureImg icon__dollar"></span>
           <h3 class="feature__title">Compara monedas</h3>
           <p class="feature__description">No más rumores, con Batabit sabrás el valor real de cada moneda en el mercado actual.</p>
-        </div>
-        <div class="feature__contain">
+        </article>
+        <article class="feature__contain">
           <span class="featureImg icon__check"></span>
           <h3 class="feature__title">Información confiable</h3>
-          <p class="feature__description">Nuestras fuentes están 100% verificadas y continuamos auditando miestras se actualizan.</p>
-        </div>
-      </div>
+          <p class="feature__description">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido miestras se actualizan.</p>
+        </article>
+      </section>
     </section>
     <section class="main-image-container">
       <div class="image-container">
         <h2 class="image-container__title">
           Conócelo hoy.
         </h2>
-        <div class="womanImg-container">
+        <div clas¬s="womanImg-container">
           <img src="./assets/img/bitcoinbaby.png" alt="" class="womanImg">
         </div>
       </div>
     </section>
-    <section class="main-plans-container">
+    <section class="main-plans-container" id="plans">
       <div class="plans-container">
         <div class="plan-description-container">
           <h2 class="plan-description__title">
@@ -157,25 +159,65 @@
             Cualquier plan te da acceso completo a nuestra plataforma.
           </p>
         </div>
-        <div class="plan-cost-container">
-          <span class="text-recomendation">
-            Recomendado
-          </span>
-          <p class="type-plan">
-            Pago Anual
-          </p>
-          <div class="plan-cost">
-            <p class="plan-cost__currency">$</p>
-            <p class="plan-cost__number">99</p>
-          </div>
-          <p class="plan-saveMoney">
-            *Ahorras $129 comparado al plan mensual.
-          </p>
-          <a href="" class="plan-choose">
-            Escoge este
-            <span class="right-arrow"></span>
-          </a>
-        </div>
+        <section class="plans-container-slider">
+          <article class="plan-cost-container basic-plan-container">
+            <span class="text-recomendation ">
+              Básico
+            </span>
+            <p class="type-plan">
+              Pago Mensual
+            </p>
+            <div class="plan-cost">
+              <p class="plan-cost__currency">$</p>
+              <p class="plan-cost__number">19</p>
+            </div>
+            <p class="plan-saveMoney">
+              *Este plan es básico con todas las ventajas.
+            </p>
+            <a href="" class="plan-choose">
+              Escoge este
+              <span class="right-arrow"></span>
+            </a>
+          </article>
+          <article class="plan-cost-container">
+            <span class="text-recomendation">
+              Recomendado
+            </span>
+            <p class="type-plan">
+              Pago Anual
+            </p>
+            <div class="plan-cost">
+              <p class="plan-cost__currency">$</p>
+              <p class="plan-cost__number">99</p>
+            </div>
+            <p class="plan-saveMoney">
+              *Ahorras $129 comparado al plan mensual.
+            </p>
+            <a href="" class="plan-choose">
+              Escoge este
+              <span class="right-arrow"></span>
+            </a>
+          </article>
+          <article class="plan-cost-container unlimited-plan-container ">
+            <span class="text-recomendation">
+              Ilimitado
+            </span>
+            <p class="type-plan">
+              Un Solo Pago
+            </p>
+            <div class="plan-cost">
+              <p class="plan-cost__currency">$</p>
+              <p class="plan-cost__number">199</p>
+            </div>
+            <p class="plan-saveMoney">
+              *Exclusivo para desarrolladores.
+            </p>
+            <a href="" class="plan-choose">
+              Escoge este
+              <span class="right-arrow"></span>
+            </a>
+          </article>
+        </section>
       </div>
     </section>
   </main>
