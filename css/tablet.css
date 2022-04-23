@@ -1,0 +1,22 @@
+.main-tables-container {
+  display: flex;
+  margin: 0 80px;
+  max-width: 572px;
+  margin: 0 auto;
+}
+
+.features-contain-container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 658px;
+}
+
+.features-contain-container .feature__contain {
+  width: 320px;
+
+}
+
+.plans-container-slider {
+  justify-content: center;
+}
