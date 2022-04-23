@@ -159,14 +159,13 @@ main {
 .main-currency-table {
   width: 70%;
   min-width: 235px;
-  max-width: 500px;
   height: 306px;
   margin: 0 auto;
   font-family: var(--secondary-font);
 }
 
 .main-currency-table .currency-table__title {
-  max-width: 300px;
+  max-width: 250px;
   margin: 0 auto;
   margin-bottom: 12px;
   padding: 0 14px;
@@ -181,7 +180,7 @@ main {
   margin: 0 auto;
   width: 90%;
   min-width: 230px;
-  max-width: 300px;
+  max-width: 250px;
   height: 159px;
 }
 
@@ -266,13 +265,12 @@ main {
   margin: 0 auto;
   width: 70%;
   min-width: 235px;
-  max-width: 500px;
   height: 306px;
   font-family: var(--secondary-font);
 }
 
 .comission-table__title {
-  max-width: 300px;
+  max-width: 250px;
   margin: 0 auto;
   margin-bottom: 12px;
   padding: 0 14px;
@@ -288,7 +286,7 @@ main {
   margin: 0 auto;
   width: 90%;
   min-width: 230px;
-  max-width: 300px;
+  max-width: 250px;
 }
 
 .comission-table__container table {
@@ -398,7 +396,6 @@ p.feature__subtitle {
 .features-contain-container {
   width: 90%;
   min-width: 288px;
-  max-width: 400px;
   height: auto;
   margin: 0 auto;
   padding-bottom: 30px;
@@ -407,8 +404,9 @@ p.feature__subtitle {
 }
 
 .features-contain-container .feature__contain {
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
   width: 100%;
+  max-width: 450px;
   padding: 14px 20px 22px 16px;
   border-radius: 4px;
   color: var(--just-white);
@@ -456,6 +454,27 @@ p.feature__description {
 
 /* Fin de cards */
 
+/* This is a style of the alternative background image */
+/* .main__image--container{
+  width: 100%;
+  min-width: 320px;
+  height: 50vh;
+  background-image: url("../assets/images/bitcoinbaby.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.main__image--container h2{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  color: var(--just-white);
+  padding-top: 6.5rem;
+} */
+
 /* Principal Image */
 
 .image-container {
@@ -468,11 +487,9 @@ p.feature__description {
 
 h2.image-container__title {
   position: absolute;
-  left: calc(50% - 144px);
+  left: calc(50% - 100px);
   top: 64px;
-  width: 90%;
-  min-width: 288px;
-  max-width: 320px;
+  width: 200px;
   font-family: var(--primary-font);
   font-weight: 700;
   font-size: 2.4rem;
@@ -492,7 +509,6 @@ img.womanImg {
 .main-plans-container .plans-container {
   width: 100%;
   min-width: 288px;
-  max-width: 320px;
   margin: 0 auto;
   padding: 64px 0;
   text-align: center;
@@ -651,4 +667,34 @@ color: #757575;
 
 .plan-cost-container.basic-plan-container {
   margin-left: 65px;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: var(--bitcoin-orange);
+}
+
+footer section{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .left ul {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  list-style: none;
+}
+
+.left li {
+  margin: 10px 0;
+}
+
+.left a {
+  text-decoration: none;
+  color: var(--just-white);
 }
